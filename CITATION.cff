@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Poland Residence Permit Wait Times: Official Voivodeship Office Data"
+authors:
+  - name: "Expat Essentials Poland"
+    website: "https://expatessentials.pl"
+version: "2026.10.16"
+date-released: "2026-10-16"
+license: CC-BY-4.0
+url: "https://app.expatessentials.pl/wait-times"
+keywords: [poland, immigration, residence permit, karta pobytu, public information]

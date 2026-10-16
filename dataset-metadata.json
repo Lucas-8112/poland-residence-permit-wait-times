@@ -1,0 +1,9 @@
+{
+  "title": "Poland Residence Permit Wait Times (Official)",
+  "subtitle": "Official voivodeship-office averages from public-information requests",
+  "id": "CHANGE_ME_KAGGLE_USERNAME/poland-residence-permit-wait-times",
+  "licenses": [{"name": "CC-BY-4.0"}],
+  "keywords": ["government", "immigration", "europe"],
+  "description": "Official figures from Polish voivodeship offices on residence-permit processing times (average days), applications and pending cases, obtained by Expat Essentials Poland via public-information requests. Averages, not medians. Cite: Expat Essentials Poland, https://app.expatessentials.pl/wait-times. More: https://expatessentials.pl",
+  "resources": [{"path": "poland-residence-permit-wait-times.csv", "description": "One row per office, case type and period, with letter reference."}]
+}

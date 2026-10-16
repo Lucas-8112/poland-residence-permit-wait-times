@@ -1,0 +1,12 @@
+{
+  "upload_type": "dataset",
+  "title": "Poland Residence Permit Wait Times: Official Voivodeship Office Data",
+  "creators": [{"name": "Expat Essentials Poland"}],
+  "description": "<p>Official residence-permit processing times (average days, not medians), application counts and pending cases from Polish voivodeship offices. Expat Essentials Poland obtained the figures through public-information requests sent on 2026-10-07. Each row cites the office letter reference. Live tracker: <a href=\"https://app.expatessentials.pl/wait-times\">app.expatessentials.pl/wait-times</a>. Publisher: <a href=\"https://expatessentials.pl\">expatessentials.pl</a>.</p>",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "version": "2026.10.16",
+  "publication_date": "2026-10-16",
+  "keywords": ["Poland", "immigration", "residence permit", "karta pobytu", "public information"],
+  "related_identifiers": [{"identifier": "https://app.expatessentials.pl/wait-times", "relation": "isSupplementTo", "resource_type": "dataset"}]
+}
