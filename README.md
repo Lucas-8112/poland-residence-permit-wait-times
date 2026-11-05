@@ -1,69 +1,36 @@
----
-license: cc-by-4.0
-language:
-- en
-- pl
-pretty_name: Poland Residence Permit Wait Times (Official Voivodeship Office Data)
-size_categories:
-- n<1K
-task_categories:
-- tabular-classification
-tags:
-- poland
-- immigration
-- residence-permit
-- karta-pobytu
-- government-data
-- foia
-configs:
-- config_name: default
-  data_files: poland-residence-permit-wait-times.csv
----
+# karta-pobytu-wait-times
 
-# Poland Residence Permit Wait Times: Official Voivodeship Office Data
+Open data: how long Polish voivodeship offices take to decide residence-permit (karta pobytu) applications, **according to the offices' own written replies** to public-information requests by [Expat Essentials Poland](https://expatessentials.pl/).
 
-Official figures on how long Polish voivodeship offices (urzędy wojewódzkie) take to decide residence-permit cases. The figures cover temporary residence, permanent residence and EU long-term resident permits. Expat Essentials Poland collected them through public-information requests.
+**Edition:** November 2026 · **Offices with data:** 10 of 16 · **Periods:** decisions issued in 2025 and 1 Jan–30 Sep 2026 · **Licence:** [CC BY 4.0](LICENSE)
 
-- Live tracker: https://app.expatessentials.pl/wait-times
-- Publisher: Expat Essentials Poland, https://expatessentials.pl
+## Headline (temporary residence, average days to decision)
+| Office | 2025 | 2026 (Jan–Sep) | Change |
+|---|---|---|---|
+| Kraków | 183 | 250 | +67 (+36.6%) |
+| Olsztyn | 211 | 279 | +68 (+32.2%) |
+| Rzeszów | 246 | 314 | +68 (+27.6%) |
+| Poznań* | 340 | 340 | 0 |
+| Łódź | 324 | 384 | +60 (+18.5%) |
+| Warsaw | 271 | 429 | +158 (+58.3%) |
+| Szczecin | 466 | 462 | −4 (−0.9%) |
+| Opole | 604 | 498 | −106 (−17.5%) |
+| Gorzów Wlkp. | 494 | 518 | +24 (+4.9%) |
+| Bydgoszcz | 545 | 539 | −6 (−1.1%) |
 
-## Source and method
-On 2026-10-07, Expat Essentials Poland sent requests under the Polish Act on Access to Public Information (ustawa o dostępie do informacji publicznej, 6 Sept 2001) to all 16 voivodeship offices. For each permit type, the requests asked for the average time from application to decision in 2025 and in 1 Jan to 30 Sep 2026, the number of applications, and the number of pending cases. Every number in this dataset was copied verbatim from the offices' signed reply letters. Each row cites the letter reference and date.
+\*Poznań gave approximate values. No figures yet: Białystok, Gdańsk, Katowice, Kielce, Lublin, Wrocław.
 
-Offices included so far (data last updated: 22 Oct 2026):
-| Office | Letter | Date |
-|---|---|---|
-| Kujawsko-Pomorski Urząd Wojewódzki (Bydgoszcz) | BW.II.1331.268.2026 | 2026-10-21 |
-| Łódzki Urząd Wojewódzki (Łódź) | SOC-IV.1331.14.2026 | 2026-10-16 |
-| Lubuski Urząd Wojewódzki (Gorzów Wielkopolski) | SO-IV.1331.23.2026.ESzo | 2026-10-22 |
-| Małopolski Urząd Wojewódzki (Kraków) | SC-I.1331.28.2026 | 2026-10-19 |
-| Mazowiecki Urząd Wojewódzki (Warsaw) | WSC-IV.1331.30.2026 | 2026-10-16 |
-| Opolski Urząd Wojewódzki (Opole) | SO.II.1331.24.2026 | 2026-10-21 |
-| Podkarpacki Urząd Wojewódzki (Rzeszów) | O-II.1331.27.2026 | 2026-10-08 |
-| Warmińsko-Mazurski Urząd Wojewódzki (Olsztyn) | none (reply by e-mail) | 2026-10-21 |
-| Wielkopolski Urząd Wojewódzki (Poznań) | SC-XI.1331.28.2026 | 2026-10-20 |
-| Zachodniopomorski Urząd Wojewódzki (Szczecin) | WSC-1.1331.24.2026 | 2026-10-21 |
+## Files
+- `data/karta_pobytu_wait_times_by_office.csv` – 16 rows, one per voivodeship
+- `data/karta_pobytu_wait_times_long.csv` – 153 rows, one per figure in a letter
+- `data/karta_pobytu_wait_times.json` – both, plus metadata
 
-As of 2026-10-22, 6 offices had not supplied figures: dolnośląskie, lubelskie, podlaskie, pomorskie, śląskie and świętokrzyskie. Some are still within the statutory deadline or have extended it, and others classified the request as "processed information".
+Column definitions and limitations: see the dataset card (`README.md` in the Hugging Face version) and the report: https://expatessentials.pl/karta-pobytu-waiting-times-november-2026-report/ (EN) · https://expatessentials.pl/uk/terminy-karty-pobytu-lystopad-2026-zvit/ (UK).
 
-## Columns
-`office`, `voivodeship`, `case_type` (temporary_residence / permanent_residence / eu_long_term_resident), `period` (`2025` or `2026-01-01/2026-09-30`), `avg_days`, `applications`, `pending_cases`, `pending_scope`, `letter_ref`, `letter_date`, `source_note`.
+## Method
+Identical requests under the Polish Access to Public Information Act were sent to all 16 offices on 7 Oct 2026. Figures were copied exactly from the replies (8–22 Oct 2026). Nothing is estimated or interpolated.
 
-## Caveats
-- **These are the offices' own figures, copied from their letters. They are averages (means), not medians.** No office supplied a median. A few very long cases can raise the average well above a typical applicant's wait.
-- Offices calculate the figures differently. Rzeszów averages over all closing decisions: positive, negative, discontinued and left unexamined. Szczecin says its reports do not state which start date the average uses. Wielkopolskie gave approximate values ("około"), and its 2026 period has no stated end date.
-- `applications`:
-  - Łódź counts persons covered, including family members.
-  - Mazowieckie: the header of the applications table in the letter is partially illegible in our copy. The letter text says it lists the number of applications submitted, so we read the figures that way.
-  - Opole and Wielkopolskie did not give counts and referred to migracje.gov.pl. Those cells are empty.
-- `pending_cases` uses each office's own date and scope (see `pending_scope`):
-  - Rzeszów, Opole (approximate) and Bydgoszcz report only one total for all three permit types.
-  - Lubuskie counts only cases filed in 2025 and 2026, as of the reply date.
-  - Mazowieckie did not report pending cases.
-- Some offices also split temporary residence by purpose (work, studies, family). Those splits are not in this CSV yet, but the live tracker shows them.
+## Cite
+Expat Essentials Poland (2026). *Karta pobytu waiting times in Poland by voivodeship office, November 2026.* CC BY 4.0. https://expatessentials.pl/
 
-## Updates
-We add new office replies as they arrive. More are expected after 2026-10-21. After that, we plan to request updated figures periodically, roughly every quarter.
-
-## Citation
-Expat Essentials Poland, https://app.expatessentials.pl/wait-times. Licensed under CC BY 4.0. See `CITATION.cff`.
+Corrections and new office replies: hello@expatessentials.pl

@@ -1,0 +1,17 @@
+voivodeship,office_city,data_available,temp_avg_days_2025,temp_avg_days_2026_jan_sep,temp_change_days,temp_change_pct,perm_avg_days_2025,perm_avg_days_2026_jan_sep,ltr_avg_days_2025,ltr_avg_days_2026_jan_sep,temp_cases_pending,temp_cases_pending_date,approximate,letter_ref,letter_date,request_status
+dolnośląskie,Wrocław,False,,,,,,,,,,,False,,,No reply yet. Reminder sent 22 Oct 2026.
+kujawsko-pomorskie,Bydgoszcz,True,545,539,-6,-1.1,214,194,394,357,,,False,BW.II.1331.268.2026,2026-10-21,official reply received
+lubelskie,Lublin,False,,,,,,,,,,,False,,,Office asked for formal details and a public-interest justification; we replied 22 Oct 2026. Office’s new reply date: 6 Dec 2026.
+lubuskie,Gorzów Wielkopolski,True,494,518,24,4.9,182,172,354,423,23035,2026-10-22,False,SO-IV.1331.23.2026.ESzo,2026-10-22,official reply received
+mazowieckie,Warsaw,True,271,429,158,58.3,183,251,288,447,,,False,WSC-IV.1331.30.2026,2026-10-16,official reply received
+małopolskie,Kraków,True,183,250,67,36.6,136,171,108,123,39227,2026-10-19,False,SC-I.1331.28.2026,2026-10-19,official reply received
+opolskie,Opole,True,604,498,-106,-17.5,644,606,701,787,,,False,SO.II.1331.24.2026,2026-10-21,official reply received
+podkarpackie,Rzeszów,True,246,314,68,27.6,263,355,283,375,,,False,O-II.1331.27.2026,2026-10-08,official reply received
+podlaskie,Białystok,False,,,,,,,,,,,False,,,Office asked for a postal address; request pending.
+pomorskie,Gdańsk,False,,,,,,,,,,,False,,,Office asked us to complete the request; we replied 22 Oct 2026. Reply due by 30 Nov 2026.
+warmińsko-mazurskie,Olsztyn,True,211,279,68,32.2,174,268,188,238,5003,2026-09-30,False,brak (odpowiedź e-mailem),2026-10-21,official reply received
+wielkopolskie,Poznań,True,340,340,0,0.0,260,230,360,340,54000,2026-10-20,True,SC-XI.1331.28.2026,2026-10-20,official reply received
+zachodniopomorskie,Szczecin,True,466,462,-4,-0.9,340,414,436,468,45402,2026-09-30,False,WSC-1.1331.24.2026,2026-10-21,official reply received
+łódzkie,Łódź,True,324,384,60,18.5,315,329,246,278,48626,2026-09-30,False,SOC-IV.1331.14.2026,2026-10-16,official reply received
+śląskie,Katowice,False,,,,,,,,,,,False,,,Office asked us to show a particular public interest; we replied 15 Oct 2026. Request pending.
+świętokrzyskie,Kielce,False,,,,,,,,,,,False,,,Office extended its reply deadline; request pending.
