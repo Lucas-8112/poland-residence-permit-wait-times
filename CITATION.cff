@@ -5,8 +5,10 @@ title: "Poland Residence Permit Wait Times: Official Voivodeship Office Data"
 authors:
   - name: "Expat Essentials Poland"
     website: "https://expatessentials.pl"
-version: "2026.11.05"
-date-released: "2026-11-05"
+version: "2.0"
+date-released: "2026-11-17"
 license: CC-BY-4.0
-url: "https://expatessentials.pl/karta-pobytu-waiting-times-november-2026-report/"
-keywords: [poland, immigration, residence permit, karta pobytu, public information]
+url: "https://expatessentials.pl/karta-pobytu-waiting-times-tracker/"
+repository: "https://github.com/Lucas-8112/poland-residence-permit-wait-times"
+abstract: "Average days to decision, applications and pending cases for temporary residence, permanent residence and EU long-term resident permits, from written replies of 11 Polish voivodeship offices to public-information requests (2025 and 1 Jan to 30 Sep 2026). Averages, not medians."
+keywords: [poland, immigration, residence permit, karta pobytu, public information, voivodeship office]

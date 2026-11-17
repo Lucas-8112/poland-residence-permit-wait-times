@@ -26,16 +26,17 @@ Average processing times for residence permits (temporary residence, permanent r
 
 - **Publisher:** Expat Essentials Poland, https://expatessentials.pl/
 - **Licence:** CC BY 4.0
-- **Coverage:** 16 offices asked; 10 replied with figures (Bydgoszcz, Gorzów Wielkopolski, Kraków, Łódź, Olsztyn, Opole, Poznań, Rzeszów, Szczecin, Warsaw). Six offices (Białystok, Gdańsk, Katowice, Kielce, Lublin, Wrocław) have no figures in this edition.
+- **Coverage:** 16 offices asked; 11 replied with figures (Bydgoszcz, Gorzów Wielkopolski, Kielce, Kraków, Łódź, Olsztyn, Opole, Poznań, Rzeszów, Szczecin, Warsaw). Five offices (Białystok, Gdańsk, Katowice, Lublin, Wrocław) have no figures yet. Kielce added 17 Nov 2026 (v2.0).
 - **Reference periods:** decisions issued in 2025; decisions issued 1 Jan–30 Sep 2026.
-- **Source letters dated:** 8–22 October 2026.
+- **Source letters dated:** 8 October–12 November 2026.
 
 ## Files
 | File | Rows | Description |
 |---|---|---|
 | `karta_pobytu_wait_times_by_office.csv` | 16 | One row per voivodeship; headline averages (temporary, permanent, EU long-term), change 2025→2026, pending temporary-residence cases, letter reference and request status. |
-| `karta_pobytu_wait_times_long.csv` | 153 | One row per figure stated in a letter (average days, applications filed, persons covered, cases pending), by permit type and period, with the original Polish labels and notes. |
+| `karta_pobytu_wait_times_long.csv` | 167 | One row per figure stated in a letter (average days, applications filed, persons covered, cases pending), by permit type and period, with the original Polish labels and notes. |
 | `karta_pobytu_wait_times.json` | — | Both tables plus metadata and caveats. |
+| `poland-residence-permit-wait-times.csv` | 96 | Flat table: office × case type × period, with avg days, applications, pending cases, letter reference and English method notes (Zenodo v2.0 format). |
 
 ## Key columns (long file)
 `voivodeship, office_city, office, letter_ref, letter_date, metric, permit_type, period, value, unit, approximate, original_metric_pl, original_permit_pl, original_period_pl, notes_pl`
@@ -48,8 +49,9 @@ Average processing times for residence permits (temporary residence, permanent r
 - Values are **averages of finished cases as stated by each office**, not medians and not forecasts.
 - Offices compute averages differently (e.g. Rzeszów includes refusals, discontinued cases and cases left without consideration; Szczecin states its reports do not define the start date of the count).
 - Poznań reported approximate values (`approximate = true`).
+- Kielce's letter does not state the end date of the 2026 period (`decisions_2026_end_date_not_stated`).
 - Pending-case counts have different dates and scopes; do not sum them.
-- 2026 covers nine months only. Ten of sixteen offices is not a national picture.
+- 2026 covers nine months only. Eleven of sixteen offices is not a national picture.
 - No estimates, media figures or crowd-sourced reports are included. Empty cells mean the office did not provide the figure.
 
 ## Citation
